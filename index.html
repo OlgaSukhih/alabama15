@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home — Song Activity</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #1e1e2f, #111);
+      color: #f9f9f9;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3em;
+      color: #fff;
+      margin-bottom: 0;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      color: #bbb;
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+    .subtitle a {
+      color: #bbb;
+      text-decoration: none;
+    }
+    audio {
+      margin-bottom: 30px;
+    }
+    .lyrics {
+      margin: 0 auto;
+      max-width: 800px;
+      font-size: 1.2em;
+      line-height: 1.8em;
+    }
+    .inline-option {
+      background-color: #292941;
+      color: #fff;
+      border: 1px solid #666;
+      border-radius: 5px;
+      padding: 2px 8px;
+      margin: 0 5px;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .inline-option.correct {
+      background-color: #2e7d32;
+      border-color: #4caf50;
+    }
+    .inline-option.incorrect {
+      background-color: #c62828;
+      border-color: #e53935;
+    }
+    .translation {
+      background-color: #222;
+      padding: 20px;
+      margin-top: 40px;
+      border-left: 5px solid #03dac5;
+      display: none;
+    }
+    .translate-btn {
+      margin-top: 30px;
+      padding: 6px 12px;
+      font-size: 16px;
+      background-color: #03dac5;
+      color: #111;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; gap: 30px;">
+    <div style="flex: 2; min-width: 0; margin-left: auto; margin-right: 20px; text-align: center;">
+  <h1>Listen & Sing</h1>
+  <div class="subtitle"><a href="https://joinandgetinspired.ru" target="_blank">Join&GetInspired</a></div>
+  <h2>Home</h2>
+
+  <audio controls>
+    <source src="edward-sharpe.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="lyrics">
+    Alabama, Arkansas<br>
+    I do love my ma and pa<br>
+    Not that way that I do love <span class="inline-option" onclick="checkInline(this, 'you')">him</span><span class="inline-option" onclick="checkInline(this, 'you')">you</span><span class="inline-option" onclick="checkInline(this, 'you')">them</span><br>
+    Well, holy moly, me oh my<br>
+    You're the <span class="inline-option" onclick="checkInline(this, 'apple')">peach</span><span class="inline-option" onclick="checkInline(this, 'apple')">queen</span><span class="inline-option" onclick="checkInline(this, 'apple')">apple</span> of my eye<br>
+    Girl, I've never loved one like you<br><br>
+
+    Man, oh man, you're my best friend<br>
+    I scream it to the <span class="inline-option" onclick="checkInline(this, 'nothingness')">universe</span><span class="inline-option" onclick="checkInline(this, 'nothingness')">nothingness</span><span class="inline-option" onclick="checkInline(this, 'nothingness')">clouds</span><br>
+    There ain't nothing that I need<br>
+    Hot and heavy, pumpkin pie<br>
+    Chocolate candy, Jesus Christ<br>
+    Ain’t nothing please me more than you<br><br>
+
+    Oh, home, let me come home<br>
+    Home is wherever I'm with <span class="inline-option" onclick="checkInline(this, 'you')">me</span><span class="inline-option" onclick="checkInline(this, 'you')">you</span><span class="inline-option" onclick="checkInline(this, 'you')">them</span><br>
+    Oh, home, let me come home<br>
+    Home is wherever I'm with you<br>
+    La, la, la, la, take me home<br>
+    (Daddy) Mother, I'm coming home<br><br>
+
+    I'll follow you into the park<br>
+    Through the jungle, through the <span class="inline-option" onclick="checkInline(this, 'dark')">dark</span><span class="inline-option" onclick="checkInline(this, 'dark')">storm</span><span class="inline-option" onclick="checkInline(this, 'dark')">rain</span><br>
+    Girl, I never loved one like you (hey)<br>
+    Moats and boats and waterfalls<br>
+    Alleyways and pay phone calls<br>
+    I've been everywhere (hey) with you<br><br>
+
+    That's true, laugh until we think we'll die<br>
+    Barefoot on a <span class='inline-option' onclick="checkInline(this, 'summer')">winter</span><span class='inline-option' onclick="checkInline(this, 'summer')">summer</span><span class='inline-option' onclick="checkInline(this, 'summer')">autumn</span> night<br>
+    Never could be sweeter than with you (hey)<br>
+    And in the streets you run a-free<br>
+    Like it's only you and me<br>
+    Geez, you're something to see<br><br>
+
+    Oh, home, let me come home<br>
+    Home is wherever I'm with you<br>
+    Oh, home, let me come home<br>
+    Home is wherever I'm with you<br>
+    La, la, la, la, take me home<br>
+    (Daddy) Mother, I'm coming home<br><br>
+
+    "Jade"<br>
+    "Alexander"<br>
+    "Do you remember that day you fell out of my window?"<br>
+    "I sure do, you came jumping out after me"<br>
+    "Well, you fell on the concrete, nearly broke your ass<br>
+    And you were bleedin' all over the place<br>
+    And I rushed you out to the hospital, you remember that?"<br>
+    "Yes, I do"<br>
+    "Well, there's something I never told you about that night"<br>
+    "What didn't you tell me?"<br>
+    "While you were sitting in the backseat smoking a cigarette<br>
+    You thought was gonna be your last<br>
+    I was falling deep, deeply in love with you<br>
+    And I never told you 'til just now"<br>
+    "Aww"<br><br>
+
+    Oh, home, let me come home<br>
+    Home is wherever I'm with you<br>
+    Oh, home, let me come home<br>
+    Home is where I'm alone with you<br>
+    Home, let me come home<br>
+    Home is wherever I'm with you<br>
+    Oh, home, yes, I am home<br>
+    Home is when I'm alone with you<br><br>
+
+    Alabama, Arkansas<br>
+    I do love my ma and pa<br>
+    Moats and boats and waterfalls<br>
+    Alleyways and pay phone calls<br>
+    Home is when I'm alone with you<br>
+    Home is when I'm alone with you<br>
+  <br>
+    Girl, I never loved one like <span class="inline-option" onclick="checkInline(this, 'you')">him</span><span class="inline-option" onclick="checkInline(this, 'you')">you</span><span class="inline-option" onclick="checkInline(this, 'you')">them</span> (hey)<br>
+    Moats and boats and <span class="inline-option" onclick="checkInline(this, 'waterfalls')">sunsets</span><span class="inline-option" onclick="checkInline(this, 'waterfalls')">waterfalls</span><span class="inline-option" onclick="checkInline(this, 'waterfalls')">skyfalls</span><br>
+    Alleyways and pay phone <span class="inline-option" onclick="checkInline(this, 'calls')">bills</span><span class="inline-option" onclick="checkInline(this, 'calls')">calls</span><span class="inline-option" onclick="checkInline(this, 'calls')">sounds</span><br>
+    I've been everywhere (hey) with you<br><br>
+
+    That's true, laugh until we think we'll die<br>
+    Barefoot on a <span class="inline-option" onclick="checkInline(this, 'summer')">winter</span><span class="inline-option" onclick="checkInline(this, 'summer')">summer</span><span class="inline-option" onclick="checkInline(this, 'summer')">rainy</span> night<br>
+    Never could be sweeter than with you (hey)<br>
+    And in the streets you run a-free<br>
+    Like it's only <span class="inline-option" onclick="checkInline(this, 'you and me')">you and me</span><span class="inline-option" onclick="checkInline(this, 'you and me')">him and her</span><span class="inline-option" onclick="checkInline(this, 'you and me')">them and us</span><br>
+    Geez, you're something to <span class="inline-option" onclick="checkInline(this, 'see')">see</span><span class="inline-option" onclick="checkInline(this, 'see')">hear</span><span class="inline-option" onclick="checkInline(this, 'see')">read</span><br><br>
+
+    "Do you remember that day you fell out of my <span class='inline-option' onclick="checkInline(this, 'window')">door</span><span class='inline-option' onclick="checkInline(this, 'window')">window</span><span class='inline-option' onclick="checkInline(this, 'window')">roof</span>"<br>
+    "I sure do, you came jumping out after me"<br>
+    "Well, you fell on the concrete, nearly broke your <span class='inline-option' onclick="checkInline(this, 'ass')">hip</span><span class='inline-option' onclick="checkInline(this, 'ass')">arm</span><span class='inline-option' onclick="checkInline(this, 'ass')">ass</span><br>
+    And you were bleedin' all over the place<br>
+    And I rushed you out to the <span class='inline-option' onclick="checkInline(this, 'hospital')">station</span><span class='inline-option' onclick="checkInline(this, 'hospital')">hospital</span><span class='inline-option' onclick="checkInline(this, 'hospital')">parking lot</span>, you remember that?"<br>
+    "Yes, I do"<br>
+    "Well, there's something I never told you about that night"<br>
+    "What didn't you tell me?"<br>
+    "While you were sitting in the <span class='inline-option' onclick="checkInline(this, 'backseat')">backseat</span><span class='inline-option' onclick="checkInline(this, 'backseat')">balcony</span><span class='inline-option' onclick="checkInline(this, 'backseat')">bathroom</span> smoking a cigarette<br>
+    You thought was gonna be your last<br>
+    I was falling deep, deeply in love with you<br>
+    And I never told you 'til just now"<br><br>
+    </div>
+ onclick="toggleTranslation()">Показать перевод</button>
+  <div class="translation" id="translation-content">
+    (Здесь вставляется полный перевод, как раньше — можно вставить по желанию)
+  </div>
+
+  
+<script>
+  function checkInline(el, correct) {
+    const options = el.parentNode.querySelectorAll('.inline-option');
+    options.forEach(opt => {
+      if (opt.textContent.trim() === correct) {
+        opt.classList.add('correct');
+        el.classList.add('pulse');
+      } else {
+        if (opt === el) {
+          opt.classList.add('incorrect');
+        }
+      }
+    });
+  }
+
+  function toggleTranslation() {
+    const block = document.getElementById('translation-content');
+    block.style.display = (block.style.display === 'none' || block.style.display === '') ? 'block' : 'none';
+  }
+
+  function toggleDiscussion() {
+    const block = document.getElementById('discussion-content');
+    block.style.display = (block.style.display === 'none' || block.style.display === '') ? 'block' : 'none';
+  }
+
+  // Параллакс-движение картинки
+  window.addEventListener('scroll', function () {
+    const img = document.getElementById('parallax-img');
+    if (img) {
+      const scrolled = window.scrollY;
+      img.style.transform = `translate(-50%, ${scrolled * 0.3}px)`;
+    }
+  });
+</script>
+</body>
+</html>
+
+</html>
